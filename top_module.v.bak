@@ -1,0 +1,40 @@
+module DE2_115_i2sound
+(
+	//////////// CLOCK //////////
+input		          		CLOCK_50;
+input		          		CLOCK_27
+
+
+//////////// LED //////////
+output		  [7:0]		LEDG;
+output		  [17:0]		LEDR;
+
+//////////// KEY //////////
+input		     [3:0]		KEY;
+
+//////////// SW //////////
+input		     [17:0]		SW;
+
+
+
+//////////// SDCARD //////////
+output		        		SD_CLK;
+inout		          		SD_CMD;
+inout		     [3:0]		SD_DAT;
+input		          		SD_WP_N;
+
+
+//////////// Audio //////////
+input		          		AUD_ADCDAT;
+inout		          		AUD_ADCLRCK;
+inout		          		AUD_BCLK;
+output		        		AUD_DACDAT;
+inout		          		AUD_DACLRCK;
+output		        		AUD_XCK;
+
+
+//////////// I2C for Audio and Tv-Decode //////////
+output		        		I2C_SCLK;
+inout		          		I2C_SDAT;
+
+)
